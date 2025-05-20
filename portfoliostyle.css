@@ -1,0 +1,365 @@
+body {
+  font-family: Borel, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  background: rgba(160, 175, 230, 0.547);
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: rgb(180, 100, 50);
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.about-content {
+  max-width: 50%;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #4a4a4a;
+  line-height: 1.5;
+  margin: 20px 0;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.social-links img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-links img:hover {
+  transform: scale(1.1);
+}
+
+.cv-button {
+  display: inline-block;
+  padding: 12px 20px;
+  color: #333;
+  background: rgba(180, 100, 50, 0.585);
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  transition: background 0.3s;
+}
+
+.cv-button:hover {
+  background: rgba(180, 100, 50, 0.293);
+}
+
+.about-svg img {
+  max-width: 450px;
+}
+
+.project {
+  margin-bottom: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: rgba(160, 175, 230, 0.547);
+  color: rgb(180, 100, 50);
+  width: 100%;
+  bottom: 0;
+  font-size: 25px;
+}
+
+.projects {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 2.5rem;
+  color: #b46432; /* Warm pastel text */
+  margin-bottom: 2rem;
+  font-family: "Borel", cursive;
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+  max-width: 320px;
+  padding: 1.5rem;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fffaf4; /* Light pastel card background */
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow on hover */
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  color: #b46432; /* Match header color */
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #4a4a4a; /* Slightly lighter text color */
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.project-links a {
+  margin-right: 10px;
+  color: #b46432; /* Pastel link color */
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 5px;
+  background-color: #f3e0d9; /* Soft pastel background */
+  transition: background-color 0.3s, color 0.3s;
+  margin-left: 0px;
+}
+
+.project-links a:hover {
+  background-color: #eed4c7; /* Lighten background on hover */
+  color: #5a3921; /* Darker color on hover */
+  text-decoration: none;
+}
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.carousel-img {
+  display: none;
+  width: 100%;
+  border-radius: 12px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-img.active {
+  display: block;
+}
+
+.carousel button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(180, 100, 50, 0.6);
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.carousel .prev {
+  left: 10px;
+}
+
+.carousel .next {
+  right: 10px;
+}
+
+.carousel button:hover {
+  background-color: rgba(180, 100, 50, 0.8);
+}
+
+.skills {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.skills h2 {
+  font-size: 2.5rem;
+  color: #b46432; /* match CV button hover */
+  margin-bottom: 2rem;
+  font-family: "Borel", cursive;
+}
+
+.skills-category h3 {
+  font-size: 1.6rem;
+  color: #754c24;
+  margin-bottom: 1rem;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fffaf4;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+  transform: scale(1.05);
+  background-color: #f7ebe1;
+}
+
+.skill-item img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 0.5rem;
+}
+
+.skill-item p {
+  font-size: 0.9rem;
+  color: #4a4a4a;
+  margin: 0;
+}
+.contact {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  color: #b46432;
+  margin-bottom: 2rem;
+  font-family: "Borel", cursive;
+}
+
+.contact-details {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.contact-item {
+  text-align: left;
+  max-width: 250px;
+}
+
+.contact-item h3 {
+  font-size: 1.4rem;
+  color: #754c24;
+  margin-bottom: 0.5rem;
+}
+
+.contact-item p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.contact-item a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+.education {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.education h2 {
+  font-size: 2.5rem;
+  color: #b46432;
+  margin-bottom: 2rem;
+  font-family: "Borel", cursive;
+}
+
+.education-details {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.education-item {
+  text-align: left;
+  max-width: 350px;
+  background-color: #fff;
+  padding: 1.5rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.education-item h3 {
+  font-size: 1.6rem;
+  color: #754c24;
+  margin-bottom: 1rem;
+}
+
+.education-item p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.education-item p strong {
+  color: #333;
+}
+.education-details img {
+  width: 400px;
+  margin-left: 100px;
+}
